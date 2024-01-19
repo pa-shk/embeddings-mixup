@@ -22,10 +22,10 @@ For evaluation, I've used mainly three metrics - accuracy, precision and recall.
 | 2 | MixUp applied to input embeddings                                                                                | 0.866        | 0.861         | 0.869      | [link](https://wandb.ai/pvlshknv/bert-base-cased-mixup/runs/rsvhtgxu?workspace=user-pvlshknv) | 456399a |
 | 3 | MixUp applied to outputs of BERT pooler ([Mixup-Transformer](https://aclanthology.org/2020.coling-main.305.pdf)) | 0.851        | 0.861         | 0.844      | [link](https://wandb.ai/pvlshknv/bert-base-cased-mixup/runs/xamg7b8l?workspace=user-pvlshknv) | c88f8a9 |
 
-To combine pairs of embeddings and labels I've used [standard MixUp](https://arxiv.org/abs/1710.09412) with slight modification in regard of choice of the coefficient with which pairs are added together proposed in [article](https://math.mit.edu/research/highschool/primes/materials/2020/Zhao-Lialin-Rumshisky.pdf).
+To combine pairs of embeddings and labels I've used [standard MixUp](https://arxiv.org/abs/1710.09412) with slight modification in regard of the choice of the coefficient with which pairs are added together proposed in [article](https://math.mit.edu/research/highschool/primes/materials/2020/Zhao-Lialin-Rumshisky.pdf).
 
 ## Model weights availability
-Model fine-tuned with augmentation (2) can be [downloaded](https://huggingface.co/pa-shk/bert-base-cased-embed-mixup) from hugging face hub.
+Model fine-tuned with augmentation (2) can be [downloaded](https://huggingface.co/pa-shk/bert-base-cased-embed-mixup) from Hugging Face hub.
 inference.ipynb contains an example of running inference on the model.
 
 ## TODO
